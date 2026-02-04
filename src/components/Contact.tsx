@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-sm font-medium text-turmeric uppercase tracking-widest">
-            Join Our Kitchen
+            Order Now
           </span>
           
           <h2 className="font-display text-4xl md:text-6xl font-bold text-foreground mt-4 mb-6">
@@ -19,10 +20,19 @@ const Contact = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-16">
-            <Button variant="hero" size="xl">
-              Shop Our Masalas
+            <Button 
+              variant="hero" 
+              size="xl"
+              onClick={() => window.open('https://instagram.com/atharvajadhav401', '_blank')}
+            >
+              <Instagram className="w-5 h-5 mr-2" />
+              Order on Instagram
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button 
+              variant="heroOutline" 
+              size="xl"
+              onClick={() => window.location.href = 'mailto:atharvajadhav753@gmail.com'}
+            >
               Wholesale Inquiries
             </Button>
           </div>
@@ -32,24 +42,37 @@ const Contact = () => {
             <div>
               <h4 className="font-display text-lg font-bold text-foreground mb-2">Location</h4>
               <p className="text-muted-foreground">
-                Shahupuri, Kolhapur<br />
-                Maharashtra 416001, India
+                Sindhudurg, Malvan<br />
+                Maharashtra, India
               </p>
             </div>
             <div>
               <h4 className="font-display text-lg font-bold text-foreground mb-2">Email</h4>
               <p className="text-muted-foreground">
-                hello@latamasale.com<br />
-                orders@latamasale.com
+                atharvajadhav753@gmail.com
               </p>
             </div>
             <div>
               <h4 className="font-display text-lg font-bold text-foreground mb-2">Phone</h4>
               <p className="text-muted-foreground">
-                +91 231 2654 XXX<br />
+                +91 8806578950<br />
                 Mon-Sat, 9am-6pm IST
               </p>
             </div>
+          </div>
+
+          {/* Instagram CTA */}
+          <div className="mt-12 p-6 bg-secondary/30 rounded-xl">
+            <p className="text-muted-foreground mb-3">For more queries, follow us on Instagram</p>
+            <a 
+              href="https://instagram.com/atharvajadhav401" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-kolhapuri hover:text-terracotta transition-colors font-medium"
+            >
+              <Instagram className="w-5 h-5" />
+              @atharvajadhav401
+            </a>
           </div>
         </div>
       </div>
@@ -64,12 +87,12 @@ const Contact = () => {
               </div>
               <div>
                 <p className="font-display font-bold text-cream">LATA MASALE</p>
-                <p className="text-xs text-cream/60">Generations of Heat, Perfected.</p>
+                <p className="text-xs text-cream/60">By Lata Jadhav • Since 2010</p>
               </div>
             </div>
 
             <p className="text-sm text-cream/60">
-              © 2024 Lata Masale. Crafted with ❤️ in Kolhapur.
+              © 2024 Lata Masale. Crafted with ❤️ in Malvan.
             </p>
           </div>
         </div>
