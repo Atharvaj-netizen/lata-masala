@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+🌶️ Masala Heritage Craft – Lata Masale
 
-## Project info
+A modern e-commerce web application built to showcase and sell Lata Masale, a heritage Indian spice brand.
+The project focuses on clean UI, smooth user experience, and modern frontend technologies.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🔗 Live Website:
+https://shop-lata-masale.lovable.app
 
-## How can I edit this code?
+📌 Project Objective
 
-There are several ways of editing your application.
+To build a responsive and user-friendly e-commerce platform that:
 
-**Use Lovable**
+Displays traditional Indian spice products
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Provides a smooth shopping experience
 
-Changes made via Lovable will be committed automatically to this repo.
+Represents a heritage brand with a modern design
 
-**Use your preferred IDE**
+🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This project is built using:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+React
 
-Follow these steps:
+Vite
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+TypeScript
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Tailwind CSS
 
-# Step 3: Install the necessary dependencies.
-npm i
+shadcn/ui
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Node.js & npm
+
+🚀 Features
+
+Product listing and details
+
+Clean and responsive UI
+
+Modern frontend architecture
+
+Fast development using Vite
+
+Deployed and live using Lovable
+
+📂 Project Setup (Run Locally)
+Prerequisites
+
+Make sure you have:
+
+Node.js
+
+npm
+
+(Recommended: install using nvm)
+
+Steps
+# Clone the repository
+git clone https://github.com/Atharvaj-netizen/masala-heritage-craft.git
+
+# Go into the project folder
+cd masala-heritage-craft
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The app will start with hot-reload and preview in your browser.
 
-**Use GitHub Codespaces**
+✏️ How to Edit This Project
+Option 1: Using Lovable
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Open the project in Lovable
 
-## What technologies are used for this project?
+Prompt changes directly
 
-This project is built with:
+All changes are auto-committed to this repository
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Option 2: Using VS Code / Any IDE
 
-## How can I deploy this project?
+Clone the repo
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Make changes locally
 
-## Can I connect a custom domain to my Lovable project?
+Push updates to GitHub
 
-Yes, you can!
+Option 3: Edit Directly on GitHub
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Open any file
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Click ✏️ Edit
+
+Commit changes
+
+🌐 Deployment
+
+The project is deployed using Lovable.
+
+To redeploy:
+
+Open the project in Lovable
+
+Click Share → Publish
+
+📈 Future Enhancements
+
+Shopping cart & checkout
+
+Backend integration
+
+Payment gateway
+
+Admin dashboard
+
+Analytics tracking
+
+👤 Author
+
+Atharva Jadhav
+GitHub: https://github.com/Atharvaj-netizen
