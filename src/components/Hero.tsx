@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-spices.jpg";
 
 const Hero = () => {
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -29,15 +37,20 @@ const Hero = () => {
 
           <p className="text-lg md:text-xl text-cream/80 mb-8 leading-relaxed max-w-xl animate-slide-up" style={{ animationDelay: '0.2s' }}>
             From the fiery highlands of Kolhapur to the aromatic coasts of Malvan, 
-            every spoonful carries four decades of family tradition and uncompromised authenticity.
+            every spoonful carries family tradition and uncompromised authenticity.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" onClick={scrollToProducts}>
               Discover Our Masalas
             </Button>
-            <Button variant="heroOutline" size="xl" className="border-cream/50 text-cream hover:bg-cream hover:text-foreground">
-              Our Story
+            <Button 
+              variant="heroOutline" 
+              size="xl" 
+              className="border-cream/50 text-cream hover:bg-cream hover:text-foreground"
+              onClick={scrollToContact}
+            >
+              Shop Now
             </Button>
           </div>
 
@@ -48,7 +61,7 @@ const Hero = () => {
               <p className="text-xs text-cream/60 uppercase tracking-wider">Premium Spices</p>
             </div>
             <div className="text-center">
-              <p className="font-display text-3xl font-bold text-turmeric">40</p>
+              <p className="font-display text-3xl font-bold text-turmeric">15</p>
               <p className="text-xs text-cream/60 uppercase tracking-wider">Years Heritage</p>
             </div>
             <div className="text-center">

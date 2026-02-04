@@ -3,6 +3,10 @@ import malvaniImage from "@/assets/malvani-masala.jpg";
 import { Button } from "@/components/ui/button";
 
 const ProductHeroes = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const products = [
     {
       name: "The Fire of the Highlands",
@@ -99,7 +103,7 @@ const ProductHeroes = () => {
                   ))}
                 </div>
 
-                <Button variant="hero" size="lg">
+                <Button variant="hero" size="lg" onClick={scrollToContact}>
                   Shop {product.subtitle}
                 </Button>
               </div>

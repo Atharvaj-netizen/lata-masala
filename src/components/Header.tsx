@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -13,27 +21,27 @@ const Header = () => {
               LATA MASALE
             </h1>
             <p className="text-xs text-muted-foreground tracking-widest uppercase">
-              Since 1985
+              Since 2010
             </p>
           </div>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#story" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Our Story
-          </a>
-          <a href="#products" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <button 
+            onClick={scrollToProducts} 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
             Products
-          </a>
-          <a href="#brand" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Brand Identity
-          </a>
-          <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          </button>
+          <button 
+            onClick={scrollToContact} 
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
             Contact
-          </a>
+          </button>
         </nav>
 
-        <Button variant="hero" size="sm">
+        <Button variant="hero" size="sm" onClick={scrollToContact}>
           Order Now
         </Button>
       </div>
