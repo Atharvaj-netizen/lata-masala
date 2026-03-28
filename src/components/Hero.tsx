@@ -48,7 +48,7 @@ const Hero = () => {
               variant="heroOutline" 
               size="xl" 
               className="border-cream/50 text-cream hover:bg-cream hover:text-foreground"
-              onClick={scrollToContact}
+              onClick={() => document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Shop Now
             </Button>
