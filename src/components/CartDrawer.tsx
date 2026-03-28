@@ -153,7 +153,7 @@ const CartDrawer = () => {
                 </div>
               )}
               {remaining <= 0 && (
-                <div className="bg-green-50 text-green-700 text-sm rounded-lg px-4 py-3 text-center font-medium">
+                <div className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 text-sm rounded-lg px-4 py-3 text-center font-medium">
                   ✅ You qualify for FREE shipping!
                 </div>
               )}
