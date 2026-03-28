@@ -41,7 +41,7 @@ const Header = () => {
           </button>
         </nav>
 
-        <Button variant="hero" size="sm" onClick={scrollToContact}>
+        <Button variant="hero" size="sm" onClick={() => document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' })}>
           Order Now
         </Button>
       </div>

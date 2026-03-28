@@ -103,7 +103,7 @@ const ProductHeroes = () => {
                   ))}
                 </div>
 
-                <Button variant="hero" size="lg" onClick={scrollToContact}>
+                <Button variant="hero" size="lg" onClick={() => document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' })}>
                   Shop {product.subtitle}
                 </Button>
               </div>
